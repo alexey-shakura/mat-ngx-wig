@@ -3,7 +3,7 @@ import { AppComponent } from './app.component';
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NxModule } from '@nrwl/nx';
-import { MatNgxWigModule } from '@mat-ngx-wig/mat-ngx-wig';
+import { MatNgxWigModule } from 'mat-ngx-wig';
 import { MatFormFieldModule, MatInputModule } from '@angular/material';
 
 

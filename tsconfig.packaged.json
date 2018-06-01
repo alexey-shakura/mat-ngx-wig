@@ -1,0 +1,8 @@
+{
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    "paths": {
+      "mat-ngx-wig": ["mat-ngx-wig"]
+    }
+  }
+}

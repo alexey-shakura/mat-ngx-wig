@@ -4,8 +4,9 @@ import { MatFormFieldModule, MatInputModule } from '@angular/material';
 import { NgModule } from '@angular/core';
 import { ReactiveFormsModule } from '@angular/forms';
 
-import { MatNgxWigComponent } from '@mat-ngx-wig/mat-ngx-wig/src/mat-ngx-wig/mat-ngx-wig.component';
 import { NgxWigModule } from 'ngx-wig';
+
+import { MatNgxWigComponent } from './mat-ngx-wig/mat-ngx-wig.component';
 
 
 @NgModule({
