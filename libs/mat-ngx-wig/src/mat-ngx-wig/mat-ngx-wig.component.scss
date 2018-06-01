@@ -1,0 +1,128 @@
+$app-color-dark: #0B3040;
+$app-color-danger: #E62F2B;
+$app-color-primary: #40A3DE;
+
+%content-list {
+  list-style-position: outside;
+  margin-left: 18px;
+  padding: 6px 0;
+}
+
+%content-area {
+  & ul {
+    list-style-type: disc;
+    @extend %content-list;
+  }
+
+  & ol {
+    list-style-type: decimal;
+    @extend %content-list;
+  }
+
+  & b,
+  & strong {
+    font-weight: 600;
+  }
+
+  & em,
+  & i {
+    font-style: italic;
+  }
+
+  & a {
+    color: $app-color-primary;
+    text-decoration: underline;
+
+    &:hover {
+      text-decoration: none;
+    }
+  }
+}
+
+.component-wrapper {
+  display: block;
+  width: 100%;
+}
+
+.nw-toolbar {
+  padding: 0 21px !important;
+  background: none !important;
+  border-left: none !important;
+  border-right: none !important;
+  border-top: 1px solid rgba($app-color-dark, 0.2) !important;
+  border-bottom: 1px solid rgba($app-color-dark, 0.2) !important;
+  border-radius: 0 !important;
+
+  color: $app-color-dark !important;
+
+  &__item {
+    padding: 3px;
+    border-right: 0 !important;
+  }
+}
+
+.nw-button {
+  border: none !important;
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+  width: 36px !important;
+  height: 36px !important;
+  border-radius: 2px !important;
+  color: inherit;
+
+  transition: opacity 0.2s;
+
+  &:focus {
+    background-color: rgba($app-color-dark, 0.1) !important;
+  }
+
+  &:active {
+    background-color: rgba($app-color-dark, 0.15) !important;
+  }
+
+  &:before {
+    font-size: 22px !important;
+  }
+
+  &--active {
+    background-color: rgba($app-color-dark, 0.1) !important;
+  }
+}
+
+.nw-editor-container {
+  border: none !important;
+  border-radius: 0 !important;
+}
+
+.nw-editor__src {
+  padding: 16px 24px !important;
+}
+
+.nw-editor {
+  display: block !important;
+  padding: 0 !important;
+  height: auto !important;
+}
+
+.nw-editor__res {
+  display: block !important;
+  padding: 16px 24px !important;
+  font-size: 16px;
+  line-height: 24px;
+  height: 400px !important;
+  overflow: auto;
+
+  @extend %content-area;
+}
+
+.nw-editor__placeholder {
+  padding: 16px 24px !important;
+}
+
+.nw-error {
+  position: relative;
+  margin-top: -1px; // cover ngx-wig's default border-bottom
+  border-top: 1px solid $app-color-danger;
+  padding: 0 24px 16px 24px;
+}

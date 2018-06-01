@@ -71,7 +71,7 @@
     "schematics": {
       "collection": "@nrwl/schematics"
     },
-    "styleExt": "css",
+    "styleExt": "scss",
     "component": {}
   },
   "warnings": {
