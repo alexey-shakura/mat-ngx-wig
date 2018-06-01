@@ -1,0 +1,36 @@
+%content-list {
+  list-style-position: outside;
+  margin-left: 18px;
+  padding: 6px 0;
+}
+
+%content-area {
+  & ul {
+    list-style-type: disc;
+    @extend %content-list;
+  }
+
+  & ol {
+    list-style-type: decimal;
+    @extend %content-list;
+  }
+
+  & b,
+  & strong {
+    font-weight: 600;
+  }
+
+  & em,
+  & i {
+    font-style: italic;
+  }
+
+  & a {
+    color: $app-color-primary;
+    text-decoration: underline;
+
+    &:hover {
+      text-decoration: none;
+    }
+  }
+}
