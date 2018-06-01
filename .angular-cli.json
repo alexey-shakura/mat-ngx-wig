@@ -1,0 +1,41 @@
+{
+  "$schema": "./node_modules/@nrwl/schematics/src/schema.json",
+  "project": {
+    "name": "mat-ngx-wig",
+    "npmScope": "mat-ngx-wig",
+    "latestMigration": "20180227-cleanup-scripts"
+  },
+  "e2e": {
+    "protractor": {
+      "config": "./protractor.conf.js"
+    }
+  },
+  "lint": [
+    {
+      "project": "./tsconfig.spec.json",
+      "exclude": "**/node_modules/**"
+    }
+  ],
+  "test": {
+    "karma": {
+      "config": "./karma.conf.js"
+    }
+  },
+  "apps": [
+    {
+      "name": "$workspaceRoot",
+      "root": ".",
+      "appRoot": ""
+    }
+  ],
+  "defaults": {
+    "schematics": {
+      "collection": "@nrwl/schematics"
+    },
+    "styleExt": "css",
+    "component": {}
+  },
+  "warnings": {
+    "typescriptMismatch": false
+  }
+}
