@@ -1,10 +1,13 @@
 import { NgModule } from '@angular/core';
-import { AppComponent } from './app.component';
+import { ReactiveFormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MatFormFieldModule, MatInputModule } from '@angular/material';
+
 import { NxModule } from '@nrwl/nx';
 import { MatNgxWigModule } from 'mat-ngx-wig';
-import { MatFormFieldModule, MatInputModule } from '@angular/material';
+
+import { AppComponent } from './app.component';
 
 
 @NgModule({
@@ -14,7 +17,8 @@ import { MatFormFieldModule, MatInputModule } from '@angular/material';
     MatFormFieldModule,
     MatInputModule,
     MatNgxWigModule,
-    NxModule.forRoot()
+    NxModule.forRoot(),
+    ReactiveFormsModule
   ],
   declarations: [AppComponent],
   bootstrap: [AppComponent]

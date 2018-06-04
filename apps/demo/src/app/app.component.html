@@ -1,3 +1,22 @@
-<mat-form-field>
-  <mat-ngx-wig placeholder="Placeholder for editor"></mat-ngx-wig>
-</mat-form-field>
+<div class="mat-app-background basic-container">
+  <div class="example-container">
+    <mat-form-field>
+      <input type="text" matInput>
+    </mat-form-field>
+
+    <div>Editor</div>
+    <mat-form-field>
+      <mat-ngx-wig [formControl]="editorControl"
+                   placeholder="Placeholder for editor">
+      </mat-ngx-wig>
+
+      <mat-error>
+        Field is required
+      </mat-error>
+
+      <mat-hint>
+        Test hint
+      </mat-hint>
+    </mat-form-field>
+  </div>
+</div>

@@ -27,7 +27,11 @@ export const _MatInputMixinBase = mixinErrorState(MatInputBase);
 @Component({
   selector: 'mat-ngx-wig',
   templateUrl: './mat-ngx-wig.component.html',
-  styleUrls: ['./mat-ngx-wig.component.scss'],
+  styleUrls: [
+    './mat-ngx-wig.component.scss',
+    '../styles/components/component-wrapper.scss',
+    '../styles/vendor/ng-wig.scss'
+  ],
   encapsulation: ViewEncapsulation.None,
   providers: [
     {
@@ -42,12 +46,12 @@ export const _MatInputMixinBase = mixinErrorState(MatInputBase);
 })
 export class MatNgxWigComponent extends _MatInputMixinBase
                                 implements CanUpdateErrorState,
-                                          ControlValueAccessor,
-                                          MatFormFieldControl<string>,
-                                          OnChanges,
-                                          OnInit,
-                                          DoCheck,
-                                          OnDestroy {
+                                           ControlValueAccessor,
+                                           MatFormFieldControl<string>,
+                                           OnChanges,
+                                           OnInit,
+                                           DoCheck,
+                                           OnDestroy {
   private static nextId: number = 0;
 
   protected _uid: string = `lms-mat-ngx-wig-${MatNgxWigComponent.nextId++}`;
@@ -105,8 +109,7 @@ export class MatNgxWigComponent extends _MatInputMixinBase
     return this._disabled;
   }
   public set disabled(isDisabled: boolean) {
-    this._disabled = coerceBooleanProperty(isDisabled);
-    this.setDisabledState(this._disabled);
+    this.setDisabledState(isDisabled);
   }
 
   private _disabled: boolean = false;
@@ -179,7 +182,9 @@ export class MatNgxWigComponent extends _MatInputMixinBase
   }
 
   public setDisabledState(isDisabled: boolean): void {
-    if (isDisabled) {
+    this._disabled = coerceBooleanProperty(isDisabled);
+
+    if (this._disabled) {
       this.editorControl.disable();
     } else {
       this.editorControl.enable();

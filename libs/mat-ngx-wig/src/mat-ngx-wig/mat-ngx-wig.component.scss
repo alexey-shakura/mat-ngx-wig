@@ -1,87 +1,70 @@
-@import '../styles/variables';
-@import '../styles/utils/content-area';
-@import '../styles/components/component-wrapper';
-
-
-.nw-toolbar {
-  padding: 0 21px !important;
-  background: none !important;
-  border-left: none !important;
-  border-right: none !important;
-  border-top: 1px solid rgba($app-color-dark, 0.2) !important;
-  border-bottom: 1px solid rgba($app-color-dark, 0.2) !important;
-  border-radius: 0 !important;
-
-  color: $app-color-dark !important;
-
-  &__item {
-    padding: 3px;
-    border-right: 0 !important;
-  }
-}
-
-.nw-button {
-  border: none !important;
-  display: flex !important;
-  align-items: center;
-  justify-content: center;
-  width: 36px !important;
-  height: 36px !important;
-  border-radius: 2px !important;
-  color: inherit;
-
-  transition: opacity 0.2s;
-
-  &:focus {
-    background-color: rgba($app-color-dark, 0.1) !important;
+.mat-form-field-type-mat-ngx-wig {
+  .mat-input-wrapper {
+    padding: 0 !important;
   }
 
-  &:active {
-    background-color: rgba($app-color-dark, 0.15) !important;
+  .mat-input-infix {
+    padding: 0;
   }
 
-  &:before {
-    font-size: 22px !important;
+  .mat-form-field-label-wrapper {
+    display: none;
   }
 
-  &--active {
-    background-color: rgba($app-color-dark, 0.1) !important;
+  .mat-error {
+    padding: 8px 24px 24px 24px;
+    word-break: break-all;
   }
-}
 
-.nw-editor-container {
-  border: none !important;
-  border-radius: 0 !important;
-}
+  .mat-hint {
+    flex: 1;
+  }
 
-.nw-editor__src {
-  padding: 16px 24px !important;
-}
+  &.mat-form-field {
+    display: block !important;
+    width: 100%;
+    line-height: inherit !important;
+  }
 
-.nw-editor {
-  display: block !important;
-  padding: 0 !important;
-  height: auto !important;
-}
+  .mat-form-field-flex {
+    display: flex !important;
+    align-items: center !important;
+    width: auto !important;
+    line-height: 24px;
+    font-size: 16px;
+  }
 
-.nw-editor__res {
-  display: block !important;
-  padding: 16px 24px !important;
-  font-size: 16px;
-  line-height: 24px;
-  height: 400px !important;
-  overflow: auto;
+  .mat-form-field-infix {
+    border-top: none;
+    width: 100% !important;
 
-  @extend %content-area;
-}
+    &:not(:first-child) {
+      margin-left: 6px;
+    }
+  }
 
-.nw-editor__placeholder {
-  padding: 16px 24px !important;
-}
+  .mat-form-field-underline {
+    position: relative !important;
+    bottom: auto;
+    margin-top: -1px;
 
-.nw-error {
-  position: relative;
-  margin-top: -1px; // cover ngx-wig's default border-bottom
-  border-top: 1px solid $app-color-danger;
-  padding: 0 24px 16px 24px;
+    & .mat-form-field-ripple {
+      top: -1px !important;
+    }
+  }
+
+  .mat-form-field-subscript-wrapper {
+    position: static !important;
+    font-size: 12px;
+    line-height: 18px;
+    margin-top: 0;
+  }
+
+  .mat-form-field-hint-spacer {
+    display: none;
+  }
+
+  &.mat-form-field-disabled {
+    cursor: not-allowed !important;
+  }
 }

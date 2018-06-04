@@ -1,3 +1,11 @@
 /* You can add global styles to this file, and also import other style files */
 @import '~mdi/css/materialdesignicons.css';
 @import "~@angular/material/prebuilt-themes/indigo-pink.css";
+
+body {
+  margin: 0;
+}
+
+.basic-container {
+  padding: 5px;
+}
