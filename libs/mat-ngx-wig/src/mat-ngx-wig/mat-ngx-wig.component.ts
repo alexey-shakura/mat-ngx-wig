@@ -18,7 +18,7 @@ import {
 } from '@angular/core';
 
 import { distinctUntilChanged, filter, takeUntil } from 'rxjs/operators'
-import { Subject } from 'rxjs/Subject';
+import { Subject } from 'rxjs';
 
 // tslint:disable-next-line:typedef
 export const _MatInputMixinBase = mixinErrorState(MatInputBase);
@@ -52,6 +52,9 @@ export class MatNgxWigComponent extends _MatInputMixinBase
                                            OnInit,
                                            DoCheck,
                                            OnDestroy {
+
+  public shouldLabelFloat: boolean = false;
+  
   private static nextId: number = 0;
 
   protected _uid: string = `lms-mat-ngx-wig-${MatNgxWigComponent.nextId++}`;
