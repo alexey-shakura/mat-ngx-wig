@@ -5,7 +5,9 @@ MatNgxWig works with `MatFormField` and can be used as a part of the form.
 
 ![MatNgxWig editor for Material](https://image.ibb.co/iKUa3J/Screen_Shot_2018_06_01_at_11_14_50_PM.png)
 
-Support: Angular 5
+##Angular Support
+
+Now supports Angular 7 and rxjs 6
 
 ## Icons
 
