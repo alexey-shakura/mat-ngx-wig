@@ -8,8 +8,8 @@ MatNgxWig works with `MatFormField` and can be used as a part of the form.
 
 ## Angular Support
 
-Now supports **Angular 7** and **RxJS 6**  - `mat-ngx-wig@2.0.0`
-For **Angular 5** - use version `mat-ngx-wig@1.0.3`
+Now supports **Angular 7** and **RxJS 6**  - `mat-ngx-wig@2.0.0`  
+For **Angular 5** - use version `mat-ngx-wig@1.0.3`  
 
 
 ## Icons
