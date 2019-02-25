@@ -18,7 +18,7 @@ import {
 } from '@angular/core';
 
 import { distinctUntilChanged, filter, takeUntil } from 'rxjs/operators'
-import { Subject } from 'rxjs/Subject';
+import { Subject } from 'rxjs';
 
 // tslint:disable-next-line:typedef
 export const _MatInputMixinBase = mixinErrorState(MatInputBase);
@@ -116,6 +116,8 @@ export class MatNgxWigComponent extends _MatInputMixinBase
 
   public shouldPlaceholderFloat: boolean = false;
 
+  public shouldLabelFloat: boolean = false;
+
   public readonly controlType: string = 'mat-ngx-wig';
 
   private _destroy$$: Subject<void> = new Subject<void>();
@@ -174,7 +176,7 @@ export class MatNgxWigComponent extends _MatInputMixinBase
     this.describedBy = ids.join(' ');
   }
 
-  public onContainerClick(event: MouseEvent): void { }
+  public onContainerClick(_event: MouseEvent): void { }
 
   public writeValue(newValue: string): void {
     this.editorControl.setValue(newValue, { emitEvent: false });
