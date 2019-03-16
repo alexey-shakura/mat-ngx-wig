@@ -44,7 +44,7 @@
     "@nrwl/nx": "7.6.2",
     "core-js": "2.6.5",
     "mdi": "2.0.46",
-    "ngx-wig": "1.6.0",
+    "ngx-wig": "2.0.0",
     "rxjs": "6.3.3",
     "tslib": "1.9.3",
     "zone.js": "0.8.29"
@@ -62,7 +62,7 @@
     "jasmine-core": "2.99.1",
     "jasmine-marbles": "0.4.0",
     "jasmine-spec-reporter": "4.2.1",
-    "karma": "4.0.0",
+    "karma": "4.0.1",
     "karma-chrome-launcher": "2.2.0",
     "karma-coverage-istanbul-reporter": "2.0.5",
     "karma-jasmine": "1.1.2",

@@ -1,7 +1,7 @@
 {
   "$schema": "../../node_modules/ng-packagr/package.schema.json",
   "name": "mat-ngx-wig",
-  "version": "7.0.0",
+  "version": "7.1.0",
   "license": "MIT",
   "author": {
     "name": "Alexey Shakura",
@@ -28,7 +28,7 @@
     "@angular/forms": "^7.0.0",
     "@angular/material": "^7.0.0",
     "@angular/cdk": "^7.0.0",
-    "ngx-wig": "^1.6.0"
+    "ngx-wig": "^2.0.0"
   },
   "ngPackage": {
     "lib": {
